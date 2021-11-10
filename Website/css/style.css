@@ -2,8 +2,27 @@
 /* Navbar */
 
 #navbar {
-  overflow: hidden;
-  background-color: #333;
+
+
+background-color: yellow;
+padding: 50px;
+font-size: 20px;
+overflow: none;
+z-index:2;
+
+}
+.hideNav{
+  position: -webkit-sticky;
+  position: sticky;
+ display:none;
+ top: 60vh;
+}
+.showNav{
+  position: -webkit-sticky;
+  position: sticky;
+display:block;
+top:0vh;
+
 }
 
 #navbar a {
@@ -29,7 +48,7 @@
 .content {
   padding: 16px;
 }
-
+/*
 .sticky {
   position: fixed;
   top: 0;
@@ -39,15 +58,16 @@
 .sticky + .content {
   padding-top: 60px;
 }
+*/
 
 /*  */
 
 
 body, html {
-  height: 100%;
+  /* height: 100%;
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
+  color: #777; */
 }
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
