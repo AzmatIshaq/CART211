@@ -127,3 +127,36 @@ h3 {
     background-attachment: scroll;
   }
 }
+
+/* Images */
+
+img#stallman1 {
+  float: left;
+  background: none;
+  display: inline;
+  width: 390px;
+  height: 645px;
+  padding-top: 2px;
+  padding-right: 60px;
+  margin-right: 0%;
+  margin-left: 3%;
+}
+
+img#logoH {
+  float:;
+  background: none;
+  display: inline;
+  width: 270px;
+  height: 150px;
+  padding-top: 2px;
+  padding-right: 60px;
+  margin-right: 0%;
+  margin-left: 3%;
+}
+/* Fonts */
+
+p#stallman1 {
+  font-family: "futura";
+  color: #dbdbdb;
+
+}
