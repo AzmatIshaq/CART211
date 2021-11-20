@@ -1,14 +1,53 @@
 
-/* Navbar */
+/* First Navbar */
+
+/* Style the navbar */
+/*
+.navbar1 {
+  float: left;
+} */
+
+#navbar1 {
+  padding-top: 0px;
+  top: 240px;
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+
+}
+
+/* Navbar links */
+#navbar1 a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+#navbar1 a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar1 a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+/* Second Navbar */
 
 #navbar {
 
-
-background-color: yellow;
+background-color: #bbbb77;
 padding: 50px;
+padding-top: 18px;
 font-size: 20px;
 overflow: none;
 z-index:2;
+bot: 100;
 
 }
 .hideNav{
@@ -72,7 +111,7 @@ body, html {
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
-  opacity: 0.65;
+  opacity: 100;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -136,7 +175,7 @@ img#stallman1 {
   display: inline;
   width: 390px;
   height: 645px;
-  padding-top: 2px;
+  padding-top: 220px;
   padding-right: 60px;
   margin-right: 0%;
   margin-left: 3%;
@@ -146,17 +185,44 @@ img#logoH {
   float:;
   background: none;
   display: inline;
-  width: 270px;
-  height: 150px;
+  width: 421px;
+  height: 262px;
   padding-top: 2px;
+  padding-bottom: 10px;
   padding-right: 60px;
   margin-right: 0%;
   margin-left: 3%;
+  top: 0px;
+  bottom: 0px;
+
 }
 /* Fonts */
 
 p#stallman1 {
   font-family: "futura";
   color: #dbdbdb;
+  padding-top: 230px;
+  opacity: 0px;
 
 }
+
+
+/* Manifesto Styling */
+
+.rowManifesto {
+  width: 1000px;
+  margin-bottom: 10px;
+
+}
+
+.columnManifesto {
+  /* float: center; */
+  /* width: 460px; */
+  padding: 20px;
+  background-color:#f2f3eb;
+  /* display: table-cell; */
+  height: 300px; /* Should be removed. Only for demonstration */
+  overflow: scroll;
+  box-shadow: 0 4px 8px 0 #bcc9d8, 0 6px 20px 0 #bcc9d8;
+}
+/*  */
