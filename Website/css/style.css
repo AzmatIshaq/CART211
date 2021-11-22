@@ -224,11 +224,21 @@ p#stallman1 {
 .columnManifesto {
   /* float: center; */
   /* width: 460px; */
+  font-family: "futura";
   padding: 20px;
   background-color:#f2f3eb;
   /* display: table-cell; */
   height: 300px; /* Should be removed. Only for demonstration */
   overflow: scroll;
   box-shadow: 0 4px 8px 0 #bcc9d8, 0 6px 20px 0 #bcc9d8;
+  color: black;
 }
-/*  */
+
+/* footer */
+
+.footer1 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 250px;
+}
