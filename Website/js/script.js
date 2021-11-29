@@ -1,33 +1,14 @@
-/**
-Title of Project
-Author Name
-
-This is a template. You must fill in the title,
-author, and this description to match your project!
-*/
-
-"use strict";
+// Javascript
 
 
-/**
-Description of preload
-*/
-function preload() {
 
+
+    /** Side Navbar */
+
+    function openNavS() {
+  document.getElementById("mySidenav").style.width = "250px";
 }
 
-
-/**
-Description of setup
-*/
-function setup() {
-
-}
-
-
-/**
-Description of draw()
-*/
-function draw() {
-
+function closeNavS() {
+  document.getElementById("mySidenav").style.width = "0";
 }
