@@ -206,8 +206,23 @@ img#logoH {
   margin-left: 3%;
   top: 0px;
   bottom: 0px;
-
 }
+
+img#logoH2 {
+  float: left;
+  background: none;
+  display: inline;
+  width: auto;
+  height: 155px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  margin-right: 0%;
+  margin-left: 0%;
+  top: 0px;
+  bottom: 100px;
+}
+
 /* Fonts */
 
 p#stallman1 {
@@ -253,10 +268,13 @@ p#stallman1 {
 /* Div home */
 
 .home {
+  border-style: dotted;
+  border-color: pink;
   background-color: black;
   color: white;
   text-align: center;
-  padding-top: 1px;
+  padding-top: 80px;
+  padding-bottom: 100px;
   /* position: relative; */
 
 }
@@ -420,7 +438,6 @@ p#stallman1 {
 }
 
 
-
 /* Flip Card */
 
 .flip-card {
@@ -431,6 +448,7 @@ p#stallman1 {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   padding: 20px;
+  padding-top: 120px;
 }
 
 .flip-card-inner {
@@ -444,7 +462,6 @@ p#stallman1 {
 }
 
 .flip-card:hover .flip-card-inner {
-
   transform: rotateY(180deg);
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
@@ -459,7 +476,9 @@ p#stallman1 {
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  /* background-color: #bbb; */
+  border-style: dotted;
+  border-color: white;
   color: black;
   background-image: url(../assets/images/girl.png);
   background-size: cover;
@@ -468,7 +487,9 @@ p#stallman1 {
 }
 
 .flip-card-back {
-  background-color: #2980b9;
+  /* background-color: #2980b9; */
+  border-style: dotted;
+  border-color: white;
   color: white;
   transform: rotateY(180deg);
   background-image: url(../assets/images/girl.png);
@@ -508,4 +529,24 @@ p#stallman1 {
   margin-left: 430px;
   background-color: green;
 
+}
+
+/* Styling P*/
+
+p.main {
+  /* display: none; */
+  background-color: white;
+  border-style: dotted;
+  color: black;
+  padding: 20px 300px 20px 20px;
+  /* text-align: center; */
+  margin-left: 270px;
+  margin-right: 10px;
+  /* padding-top: 200px; */
+  top: 80px;
+  float: left;
+  border-width: medium;
+  border-radius: 20px;
+  position: relative;
+  /* line-height: 100px; */
 }
