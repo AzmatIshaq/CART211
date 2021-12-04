@@ -550,3 +550,18 @@ p.main {
   position: relative;
   /* line-height: 100px; */
 }
+
+
+/* Font */
+
+/* @font-face {
+  font-family: 'Alegreya Sans';
+  font-style: italic;
+  font-weight: 900;
+  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VPEpGhE9GmRGyBaT8.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+} */
+
+.remote {
+  font-family: 'Alegreya+Sans'
+}
