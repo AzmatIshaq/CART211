@@ -1,1 +1,142 @@
 /*  CSS StyleSheet */
+
+/* Container div */
+
+.container {
+  background-color: black;
+  border-color: pink;
+  border-style: dotted;
+  width: 100%;
+}
+
+/* Styling for Nav */
+
+.navArea {
+  background-color: black;
+  border-color: orange;
+  border-style: dotted;
+  display: flex;
+  width: 100%;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+/* Main content div */
+
+.mainContent {
+  background-color: black;
+  border-color: blue;
+  border-style: dotted;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 39% 39%;
+  color: white;
+  padding: 1%;
+}
+
+.mainContent > div {
+  margin-left:1%;
+  background-color: red;
+  padding-left:5px;
+  /* border-color: white;
+  border-style: dotted; */
+}
+.mainContent > div img{
+  width:100%;
+}
+
+/* Side navigation Id */
+
+#sideNav {
+  grid-row: 1 / span 3;
+
+}
+
+/* Font home id */
+
+#homeGNU {
+  font-family:'Alegreya Sans', sans-serif;
+}
+
+/* Main logo id */
+
+#logo {
+  background-color: blue;
+  width:20%;
+  margin-left:20%;
+}
+#logo img{
+  width:100%;
+}
+
+
+/* Navigation small logo */
+
+#navLogo {
+  background-color: blue;
+  width:20%;
+  margin-left:40%;
+}
+#navLogo img{
+  width:30%;
+}
+
+
+/* Why GNU? Styling */
+
+#cellOne {
+width-right:80%;
+background-color: #3a3229;
+border-radius: 3%;
+/* margin-left:0%; */
+}
+
+/* Edit image inside cellOne */
+
+#cellOne img {
+  float: left;
+  width: 50%;
+
+}
+
+/* Edit text inside cellOne */
+
+#cellOne p {
+  font-family:'Alegreya Sans', sans-serif;
+  font-size: 130%;
+  margin-right: 4%;
+  /* padding-left: 50%; */
+
+
+}
+
+
+  /* cellTwo  */
+
+  #cellTwo {
+  width-right:80%;
+  background-color: #3a3229;
+  border-radius: 3%;
+  }
+
+  /* Edit image inside cellTwo */
+
+  #cellTwo img {
+    float: left;
+    width: 50%;
+
+  }
+
+  /* Edit text inside cellTwo */
+
+  #cellTwo p {
+    font-family:'Alegreya Sans', sans-serif;
+    font-size: 130%;
+    margin-right: 4%;
+    /* padding-left: 50%; */
+
+
+  }
