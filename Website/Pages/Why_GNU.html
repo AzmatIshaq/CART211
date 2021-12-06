@@ -40,40 +40,65 @@
     <div id="benefits"> <img src="../assets/images/benefits.png"> </img> </div>
     <div id="inclusionExclusion"> <img src="../assets/images/inclusion_vs_exclusion.png"> </img> </div>
   </div>
-  <div id="cellOne">
+  <div class = "benefitsSection" id="cellOne">
     <img src="../assets/images/magnifyCode.png"></img>
     <p>Fix Code Yourself</p>
   </div>
-  <div id="cellTwo">
+  <div class = "benefitsSection" id="cellTwo">
     cell two
     <img src="../assets/images/copy_programs.png"></img>
-    <p>Make Copies</p
+    <p>Make Copies</p>
   </div>
-  <div id="cellThree">
+  <div class = "benefitsSection" id="cellThree">
     cell three
     <img src="../assets/images/collaboration.png"></img>
-    <p>Work Together</p
+    <p>Work Together</p>
   </div>
-  <div id="cellFour">
+  <div class = "benefitsSection" id="cellFour">
     cell four
     <img src="../assets/images/creative_contribution.png"></img>
-    <p>Contribute Code</p
+    <p>Contribute Code</p>
   </div>
-  <div id="cellFive">
+  <div class = "benefitsSection" id="cellFive">
     cell five
-    <img src="../assets/images/money.png">test</img>
-    <p>Save Money</p
+    <img src="../assets/images/low_cost.png">test</img>
+    <p>Save Money</p>
   </div>
-  <div id="cellSix">
+  <div class = "benefitsSection" id="cellSix">
     cell six
     <img src="../assets/images/magnifyCode"></img>
-    <p>Fix Code Yourself</p
+    <p>Fix Code Yourself</p>
+  </div>
+
+  <!--Inclusion Section -->
+
+  <div class = "InclusionSection" style = "display:none">
+    Inclusion
+    <img src="../assets/images/magnifyCode"></img>
+    <p>Fix Code Yourself</p>
   </div>
 </div>
 
 </div>
 
   <script>
+  let includeButton = document.getElementById("inclusionExclusion");
+  includeButton.addEventListener("click",showIncludeSection);
+
+  function showIncludeSection(){
+    console.log("triggered");
+    let benefitsList  = document.getElementsByClassName("benefitsSection");
+    for(let i =0; i< benefitsList.length; i++){
+      benefitsList[i].style.display ="none";
+    }
+
+    let inclusionList  = document.getElementsByClassName("InclusionSection");
+    for(let i =0; i< inclusionList.length; i++){
+      inclusionList[i].style.display ="block";
+    }
+
+  }
+
   </script>
 </body>
 
