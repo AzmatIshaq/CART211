@@ -316,7 +316,9 @@ border-radius: 3%;
     border-style: dotted;
     width: 100%;
     display: grid;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: 50% 50%;
+    /* grid-template-rows: 100% */
+    /* grid-template-area: */
     color: white;
   }
 
@@ -328,9 +330,34 @@ border-radius: 3%;
     border-style: dotted; */
   }
   .mainContentSoftware > div img{
-    width:40%;
+    width:20%;
   }
 
+
+  /* Cells for Software page */
+
+  #softwareCellOne {
+    width:100%;
+    background-color: black;
+  }
+
+  #softwareCellTwo {
+    width:100%;
+    background-color: black;
+  }
+  #softwareCellThree {
+    /* Making element span two columns */
+    grid-column: 1 / span 2;
+    background-color: black;
+  }
+  #softwareCellFour {
+    width:100%;
+    background-color: black;
+  }
+  #softwareCellFive {
+    width:100%;
+    background-color: black;
+  }
 
 
   /* Footer */
