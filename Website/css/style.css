@@ -192,8 +192,8 @@ body {
 /* Navigation small logo */
 
 #navLogo {
-  background-color: black;
-  width:5%;
+  background-color:transparent;
+  width:4%;
   margin-left:20%;
 }
 #navLogo img{
@@ -364,14 +364,14 @@ border-radius: 3%;
 
   #softwareP_Headers {
     color:#dccc6b;
-    font-size:100%;
+    font-size:150%;
     font-family:'Alegreya Sans', sans-serif;
     margin-top:0%;
     padding-top:0%;
   }
 
   #softwareP {
-    color:#dccc6b;
+    color:green;
     font-size:100%;
     font-family:'Alegreya Sans', sans-serif;
     margin-top:0%;
