@@ -51,15 +51,13 @@
   </div>
   <div class = "benefitsSection" id="cellThree">
     cell three
-    <img src="../assets/images/collaboration.png"></img>
-    <p>Work Together</p>
   </div>
   <div class = "benefitsSection" id="cellFour">
     cell four
     <img src="../assets/images/creative_contribution.png"></img>
     <p>Contribute Code</p>
   </div>
-  <div class = "benefitsSection" id="cellFive">
+  <!-- <div class = "benefitsSection" id="cellFive">
     cell five
     <img src="../assets/images/low_cost.png">test</img>
     <p>Save Money</p>
@@ -68,20 +66,22 @@
     cell six
     <img src="../assets/images/magnifyCode"></img>
     <p>Fix Code Yourself</p>
-  </div>
+  </div> -->
 
   <!--Inclusion Section -->
 
   <div class = "InclusionSection" style = "display:none">
     Inclusion
-    <img src="../assets/images/magnifyCode"></img>
-    <p>Fix Code Yourself</p>
+    <img src="../assets/images/sad_girl.png"></img>
+    <p>Inclusion</p>
   </div>
 </div>
 
 </div>
 
   <script>
+  // Code to have click reveal effect between div sections
+  // Reveal inclusion vs exclusion section
   let includeButton = document.getElementById("inclusionExclusion");
   includeButton.addEventListener("click",showIncludeSection);
 
@@ -96,8 +96,29 @@
     for(let i =0; i< inclusionList.length; i++){
       inclusionList[i].style.display ="block";
     }
-
   }
+
+  // Reveal Benefits section
+
+  let benefitsButton = document.getElementById("benefits");
+  benefitsButton.addEventListener("click",showBenefitsSection);
+
+
+  function showBenefitsSection(){
+    console.log("triggered");
+    let benefitsList  = document.getElementsByClassName("benefitsSection");
+    for(let i =0; i< benefitsList.length; i++){
+      benefitsList[i].style.display ="block";
+    }
+
+    let inclusionList  = document.getElementsByClassName("InclusionSection");
+    for(let i =0; i< inclusionList.length; i++){
+      inclusionList[i].style.display ="none";
+    }
+  }
+
+
+
 
   </script>
 </body>

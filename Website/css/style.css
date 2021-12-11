@@ -16,10 +16,15 @@
   border-color: orange;
   border-style: dotted;
   display: flex;
-  width: 100%;
+  /* reset to 100%? */
+  width: 95%;
+  margin-left:0%;
   color: white;
   font-family: 'Roboto', sans-serif;
-
+  position: sticky;
+  top: 0;
+  background-color: rgba(0,0,0,.5);
+  z-index:5;
 
 }
 
@@ -43,10 +48,10 @@
 }
 
 
-/* Main content div */
+/* Main content div for sections Why GNU, Why Not Gnu, Community and Collaboration, GNU Software */
 
 .mainContent {
-  background-color: yellow;
+  background-color: black;
   border-color: blue;
   border-style: dotted;
   width: 100%;
@@ -75,6 +80,7 @@
   background-color: #25211e;
 }
 
+/* Button to reveal Why GNU sidebar elements */
   /* Benefits */
   #benefits {
 
@@ -85,13 +91,16 @@
 
   }
 
+
 /*  HOME PAGE STYLING */
 
   /* Maint content home */
 
 .mainContentHome {
-  width: 100%;
-  background: teal;
+  width: 98%;
+  border-style: dotted;
+  border-color: white;
+  background: black;
   display: flex;
 }
 
@@ -119,24 +128,49 @@
 
 #homeGNU {
   font-family:'Alegreya Sans', sans-serif;
+  font-weight: 800;
+}
+
+
+/* Home Heading */
+
+.homeHeading {
+  font-weight:800;
+  font-size: 80px;
+  line-height: 5%;
 }
 
   /* CellOneHome */
 
-  #cellOneHome {
+/* Cell for text next to home Stallman illustration */
+  #cellOneHomeText {
   width-right:80%;
-  width: 50%;
+  width: 80%;
   background-color: #3a3229;
   border-radius: 3%;
+  border-style: dotted;
+  border-color: violet;
   /* margin-left:0%; */
+  font-family:'Alegreya Sans', sans-serif;
+  font-weight:100;
+  padding:0;
   }
 
 /* Main logo id */
 
 #logo {
-  background-color: blue;
+  background-color: transparent;
+  border-style: dotted;
+  border-color: yellow;
   width:20%;
-  margin-left:20%;
+  margin-left:40%;
+  position:relative;
+  z-index:4;
+  margin-top: -10px;
+  top: 10px;
+
+  /* position: relative; */
+  /* overflow: visible; */
 }
 #logo img{
   width:100%;
@@ -146,7 +180,7 @@
 /* Navigation small logo */
 
 #navLogo {
-  background-color: blue;
+  background-color: black;
   width:5%;
   margin-left:20%;
 }
@@ -156,6 +190,8 @@
 
 
 /* WHY GNU STYLING */
+
+/* CellOne */
 
 #cellOne {
 width-right:80%;
@@ -174,11 +210,11 @@ border-radius: 3%;
 
   /* Edit text inside cellOne */
 
-#cellOne p {
+/* #cellOne p {
   font-family:'Alegreya Sans', sans-serif;
   font-size: 130%;
   margin-right: 4%;
-}
+} */
 
 
   /* cellTwo  */
@@ -189,7 +225,7 @@ border-radius: 3%;
   border-radius: 3%;
   }
 
-  /* Edit image inside cellTwo */
+    /* Edit image inside cellTwo */
 
   #cellTwo img {
     float: left;
@@ -197,7 +233,7 @@ border-radius: 3%;
 
   }
 
-  /* Edit text inside cellTwo */
+    /* Edit text inside cellTwo */
 
   #cellTwo p {
     font-family:'Alegreya Sans', sans-serif;
@@ -205,5 +241,64 @@ border-radius: 3%;
     margin-right: 4%;
     /* padding-left: 50%; */
 
+  }
 
+  /* Cell Three */
+
+  #cellThree {
+  width-right:80%;
+  background-color: #3a3229;
+  border-radius: 3%;
+  }
+
+    /* Edit image inside cellThree */
+
+  #cellThree img {
+    float: left;
+    width: 50%;
+
+  }
+
+    /* Edit text inside cellThree */
+
+  #cellThree p {
+    font-family:'Alegreya Sans', sans-serif;
+    font-size: 130%;
+    margin-right: 4%;
+    /* padding-left: 50%; */
+
+  }
+
+  /* Cell Four */
+
+  #cellFour {
+  width-right:80%;
+  background-color: #3a3229;
+  border-radius: 3%;
+  }
+
+    /* Edit image inside cellFour */
+
+  #cellFour img {
+    float: left;
+    width: 50%;
+
+  }
+
+    /* Edit text inside cellFour */
+
+  #cellFour p {
+    font-family:'Alegreya Sans', sans-serif;
+    font-size: 130%;
+    margin-right: 4%;
+    /* padding-left: 50%; */
+
+  }
+
+
+  /* Footer */
+
+  .footer {
+    background: blue;
+    display: flex;
   }
