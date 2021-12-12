@@ -79,15 +79,21 @@
     <p style="font-size:100%"> Save money on costly proprietary repair or software licenses.</p>
   </div>
 
-  </div> <!-- End of mainContent div -->
-
   <!--Inclusion vs Exclusion Section -->
 
-  <div class = "InclusionSection" style = "display:none">
-    Inclusion
-    <img src="../assets/images/sad_girl.png"></img>
+  <div class = "inclusionSection" style = "display:none">
+    <img src="../assets/images/happy_girl.png"></img>
     <p>Inclusion</p>
   </div>
+
+  <div class = "inclusionSection" style = "display:none">
+    <img src="../assets/images/sad_girl.png"></img>
+    <p>Exclusion</p>
+  </div>
+
+
+  </div> <!-- End of mainContent div -->
+
 
 </div>   <!-- End of Container -->
 
@@ -104,7 +110,7 @@
 </div> <!-- End of container -->
 
   <script>
-  // Code to have click reveal effect between div sections
+// Code to have click reveal effect between div sections
   // Reveal inclusion vs exclusion section
   let includeButton = document.getElementById("inclusionExclusion");
   includeButton.addEventListener("click",showIncludeSection);
@@ -116,7 +122,7 @@
       benefitsList[i].style.display ="none";
     }
 
-    let inclusionList  = document.getElementsByClassName("InclusionSection");
+    let inclusionList  = document.getElementsByClassName("inclusionSection");
     for(let i =0; i< inclusionList.length; i++){
       inclusionList[i].style.display ="block";
     }
@@ -135,7 +141,7 @@
       benefitsList[i].style.display ="block";
     }
 
-    let inclusionList  = document.getElementsByClassName("InclusionSection");
+    let inclusionList  = document.getElementsByClassName("inclusionSection");
     for(let i =0; i< inclusionList.length; i++){
       inclusionList[i].style.display ="none";
     }
