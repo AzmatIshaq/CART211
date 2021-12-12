@@ -18,12 +18,12 @@ body {
 .navArea {
   background-color: black;
   /* border-color: orange; */
-  border-bottom: 1px solid #3a3229;
+  border-bottom: 1px solid #dccc6b;
   border-style: dotted;
   /* border-radius: 5px; */
   display: flex;
-  /* reset to 100%? */
-  width: 100%;
+    /* Prevent Navbar from extending out of container */
+  box-sizing: border-box;
   margin-left:0%;
   color: white;
   font-family: 'Roboto', sans-serif;
@@ -221,6 +221,7 @@ body {
 width-right:80%;
 background-color: #3a3229;
 border-radius: 3%;
+
 /* margin-left:0%; */
 }
 
@@ -399,9 +400,14 @@ border-radius: 3%;
     background: #25211e;
     height: 200px;
     display: flex;
+    padding-top:40px;
+    padidng-bottom: 40px;
 
   }
 
+.footer a {
+  color:white;
+}
 
 
 
