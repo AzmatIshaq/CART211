@@ -60,9 +60,10 @@ body {
   background-color: black;
   border-color: blue;
   border-style: dotted;
-  width: 100%;
+  width: 95%;
   display: grid;
   grid-template-columns: 20% 40% 40%;
+  gap: 1%;
   color: white;
 }
 
@@ -77,6 +78,14 @@ body {
   width:100%;
 }
 
+/* Container for the images section of WHY GNU? */
+/* .mainContentContainer {
+ width:35%;
+} */
+/* .mainContent > div {
+
+} */
+
 
 
 /* Side navigation */
@@ -84,17 +93,20 @@ body {
 #sideNav {
   grid-row: 1 / span 3;
   background-color: #25211e;
+  height: 90%;
+  border-radius:3%;
 }
+
 
 /* Button to reveal Why GNU sidebar elements */
   /* Benefits */
   #benefits {
-
+  margin-top:40px;
   }
 
   /* Inclusion vs Exclusion */
   #inclusionExclusion {
-
+    margin-top:40px;
   }
 
 
@@ -203,7 +215,7 @@ body {
 
 /* WHY GNU STYLING */
 
-/* CellOne */
+  /* CellOne */
 
 #cellOne {
 width-right:80%;
@@ -212,7 +224,7 @@ border-radius: 3%;
 /* margin-left:0%; */
 }
 
-  /* Edit image inside cellOne */
+    /* Edit image inside cellOne */
 
 #cellOne img {
   float: left;
@@ -220,7 +232,7 @@ border-radius: 3%;
 
 }
 
-  /* Edit text inside cellOne */
+    /* Edit text inside cellOne */
 
  #cellOne p {
   font-family:'Alegreya Sans', sans-serif;
@@ -287,6 +299,7 @@ border-radius: 3%;
   width-right:80%;
   background-color: #3a3229;
   border-radius: 3%;
+
   }
 
     /* Edit image inside cellFour */
@@ -391,7 +404,11 @@ border-radius: 3%;
 
 
 
+
+
   /* Effects */
+
+    /* Flip Effect Horizontal */
 
 
 .flip-box {
@@ -432,4 +449,22 @@ border-radius: 3%;
   background-color: dodgerblue;
   color: white;
   transform: rotateX(180deg);
+}
+
+
+  /* Flip Effect Vertical */
+
+
+
+  /*  Card Effect for SideNav in Why GNU? */
+
+  .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-style: dotted;
+  border-color:purple;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
