@@ -475,6 +475,15 @@ border-radius: 3%;
     width: 250px;
   }
 
+  /* Current Campaigns */
+
+#currentCampaigns {
+  grid-row: 1 / span 3;
+  background-color: #25211e;
+  height: 90%;
+  border-radius:3%;
+  padding-right:5px;
+}
 
 
 
