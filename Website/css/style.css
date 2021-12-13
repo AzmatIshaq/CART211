@@ -8,7 +8,7 @@ body {
 
 .container {
   background-color: black;
-  border-color: pink;
+  /* border-color: pink; */
   border-style: dotted;
   width: 100%;
 }
@@ -59,7 +59,7 @@ body {
 
 .mainContent {
   background-color: black;
-  border-color: blue;
+  /* border-color: blue; */
   border-style: dotted;
   width: 95%;
   display: grid;
@@ -113,7 +113,7 @@ body {
 
 .inclusionSection {
   background-color: black;
-  border-color: blue;
+  /* border-color: blue; */
   border-style: dotted;
   height: 90%;
   box-sizing: border-box;
@@ -131,7 +131,7 @@ body {
 .mainContentHome {
   width: 98%;
   border-style: dotted;
-  border-color: white;
+  /* border-color: white; */
   background: black;
   display: flex;
 }
@@ -142,7 +142,7 @@ body {
 #home {
   background-color: purple;
   border: dotted;
-  border-color: white;
+  /* border-color: white; */
   width: 400%;
 }
 
@@ -150,7 +150,7 @@ body {
 
 #homeStallman {
   border: dotted;
-  border-color: lime;
+  /* border-color: lime; */
   width: 30%;
   height: 50%;
 }
@@ -187,7 +187,7 @@ body {
   background-color: black;
   border-radius: 3%;
   border-style: dotted;
-  border-color: violet;
+  /* border-color: violet; */
   /* margin-left:0%; */
   font-family:'Alegreya Sans', sans-serif;
   font-weight:100;
@@ -199,7 +199,7 @@ body {
 #logo {
   background-color: transparent;
   border-style: dotted;
-  border-color: yellow;
+  /* border-color: yellow; */
   width:20%;
   margin-left:40%;
   position:relative;
@@ -340,7 +340,7 @@ border-radius: 3%;
 
   .mainContentSoftware {
     background-color: black;
-    border-color: blue;
+    /* border-color: blue; */
     border-style: dotted;
     width: 100%;
     display: grid;
@@ -453,7 +453,7 @@ border-radius: 3%;
 
   .mainContentCommunity {
     background-color: black;
-    border-color: green;
+    /* border-color: green; */
     border-style: dotted;
     width: 100%;
     display: grid;
@@ -564,7 +564,7 @@ border-radius: 3%;
 
   border-radius: 10px;
   border-style: dotted;
-  border-color:purple;
+  /* border-color:purple; */
 }
 
 .card:hover {
