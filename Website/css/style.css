@@ -90,7 +90,7 @@ body {
   grid-row: 1 / span 3;
   background-color: #25211e;
   height: 90%;
-  border-radius:3%;
+  border-radius:5px;
   padding-right:5px;
 }
 
@@ -185,7 +185,7 @@ body {
   width-right:80%;
   width: 80%;
   background-color: black;
-  border-radius: 3%;
+  border-radius: 5px;
   /* border-style: dotted; */
   /* border-color: violet; */
   /* margin-left:0%; */
@@ -234,7 +234,7 @@ body {
 #cellOne {
 width-right:80%;
 background-color: #3a3229;
-border-radius: 3%;
+border-radius: 5px;
 
 /* margin-left:0%; */
 }
@@ -261,7 +261,7 @@ border-radius: 3%;
   #cellTwo {
   width-right:80%;
   background-color: #3a3229;
-  border-radius: 3%;
+  border-radius: 5px;
   }
 
     /* Edit image inside cellTwo */
@@ -287,7 +287,7 @@ border-radius: 3%;
   #cellThree {
   width-right:80%;
   background-color: #3a3229;
-  border-radius: 3%;
+  border-radius: 5px;
   }
 
     /* Edit image inside cellThree */
@@ -313,7 +313,7 @@ border-radius: 3%;
   #cellFour {
   width-right:80%;
   background-color: #3a3229;
-  border-radius: 3%;
+  border-radius: 5px;
 
   }
 
@@ -481,7 +481,7 @@ border-radius: 3%;
   grid-row: 1 / span 3;
   background-color: #25211e;
   height: 90%;
-  border-radius:3%;
+  border-radius:5px;
   padding-right:5px;
 }
 
@@ -491,6 +491,7 @@ border-radius: 3%;
 
   .footer {
     background: #25211e;
+    border-radius: 5px;
     height: 200px;
     display: flex;
     padding-top:40px;
