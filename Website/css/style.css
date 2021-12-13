@@ -386,7 +386,7 @@ border-radius: 3%;
   /* width:auto; */
     background-color: black;
   }
-  
+
   #softwareCellFive {
   /* width:auto; */
   background-color: black;
@@ -398,17 +398,21 @@ border-radius: 3%;
     color:#dccc6b;
     font-size:150%;
     font-family:'Alegreya Sans', sans-serif;
+    font-weight:800;
+    margin-top:0%;
+    padding-top:0%;
+    float: right;
+  }
+
+  #softwareP {
+    color:white;
+    font-size:100%;
+    font-family:'Alegreya Sans', sans-serif;
+    font-weight:100;
     margin-top:0%;
     padding-top:0%;
   }
 
-  #softwareP {
-    color:green;
-    font-size:100%;
-    font-family:'Alegreya Sans', sans-serif;
-    margin-top:0%;
-    padding-top:0%;
-  }
 
   /* Footer */
 
