@@ -442,7 +442,7 @@ border-radius: 3%;
 }
 
 .mainContentNotGNU > div img{
-  width: 250px;
+  width: 200px;
 }
 
 
@@ -457,7 +457,7 @@ border-radius: 3%;
     border-style: dotted;
     width: 100%;
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 10% 90%;
     color: white;
     box-sizing: border-box;
   }
@@ -576,6 +576,11 @@ border-radius: 3%;
   -webkit-transform: scale(1.05); /* Safari 3-8 */
   transform: scale(1.05);
 }
+
+/* Add effect when active */
+/* .card:hover.active {
+    background: #3a3229;
+} */
 
 
   /* Parallax  under Navbar*/
