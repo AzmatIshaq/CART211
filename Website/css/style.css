@@ -66,12 +66,13 @@ body {
   grid-template-columns: 20% 40% 40%;
   gap: 1%;
   color: white;
+  margin-top:1%;
 
 }
 
 .mainContent > div {
   margin-left:1%;
-  background-color: red;
+  background-color: black;
   padding-left:5px;
   /* border-color: white;
   border-style: dotted; */
@@ -90,6 +91,7 @@ body {
   background-color: #25211e;
   height: 90%;
   border-radius:3%;
+  padding-right:5px;
 }
 
 
@@ -113,7 +115,8 @@ body {
   background-color: black;
   border-color: blue;
   border-style: dotted;
-  height: 90%
+  height: 90%;
+  box-sizing: border-box;
   /* width: 95%;
   display: grid;
   grid-template-columns: 20% 80%;
@@ -413,6 +416,67 @@ border-radius: 3%;
     padding-top:0%;
   }
 
+/* STYLING for Why Not GNU? PAGE */
+
+
+/* Maint content */
+
+.mainContentNotGNU {
+  background-color: black;
+  border-color: blue;
+  border-style: dotted;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 26.6% 26.6% 26.6%;
+  color: white;
+  box-sizing: border-box;
+}
+
+.mainContentNotGNU > div {
+  margin-left:20%;
+  background-color: red;
+  padding-left:5px;
+  margin-top: 10px;
+  /* border-color: white;
+  border-style: dotted; */
+}
+
+.mainContentNotGNU > div img{
+  width: 250px;
+}
+
+
+
+/* STYLING for Community Collaboration Page*/
+
+  /* Maint content */
+
+  .mainContentCommunity {
+    background-color: black;
+    border-color: green;
+    border-style: dotted;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    color: white;
+    box-sizing: border-box;
+  }
+
+  .mainContentCommunity > div {
+    margin-left:20%;
+    background-color: red;
+    padding-left:5px;
+    margin-top: 10px;
+    /* border-color: white;
+    border-style: dotted; */
+  }
+
+  .mainContentCommunity > div img{
+    width: 250px;
+  }
+
+
+
 
   /* Footer */
 
@@ -487,12 +551,21 @@ border-radius: 3%;
   .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
+  opacity: 0.8;
+
+  border-radius: 10px;
   border-style: dotted;
   border-color:purple;
 }
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  opacity: 1;
+  background: #3a3229;
+    /* Zoom effect */
+  -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05);
 }
 
 
@@ -501,15 +574,15 @@ border-radius: 3%;
   .parallax {
   /* The image used */
   background-image: url("https://i.ibb.co/D1R1Z8h/gnu-logo.png");
-  background-repeat: no-repeat;
-  background-color:blue;
+  background-color:#3a3229;
 
   /* Set a specific height */
-  min-height: 70px;
+  min-height: 300px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
+  background-origin: border-box;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 40%;
 }

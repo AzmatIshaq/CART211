@@ -39,66 +39,24 @@
     <!-- Logo Div-->
   <!-- <div id="logo"></div> -->
 <!-- Main Content div -->
-<div class="mainContent">
-  <div id="sideNav">
-    <p> Benefits </p>
-    <div id="benefits"> <img src="../assets/images/benefits.png"> </img> </div>
-    <div id="inclusionExclusion"> <img src="../assets/images/inclusion_vs_exclusion.png"> </img> </div>
-  </div>
-  <div class = "benefitsSection" id="cellOne">
-    cell one
-    <img src="../assets/images/collaboration.png"></img>
-    <p>Work Together</p>
-  </div>
-  <div class = "benefitsSection" id="cellTwo">
-    cell two
-    <img src="../assets/images/creative_contribution.png"></img>
-    <p>Contribute Code</p>
-  </div>
-  <div class = "benefitsSection" id="cellThree">
-  cell three
-  </div>
-  <div class = "benefitsSection" id="cellFour">
-    cell four
-
-  </div>
-  <div class = "benefitsSection" id="cellFive">
-    cell five
-
-  </div>
-  <div class = "benefitsSection" id="cellSix">
-    cell six
+<div class="mainContentCommunity">
+  <div style="background-color:blue;"> <img src="../assets/images/join_movement.png"> </img> </div>
+  <div style="background-color:pink;">
+    <img src="../assets/images/volunteer.png"> </img>
+    <img src="../assets/images/shop.png"> </img>
+    <img src="../assets/images/donate.png"> </img>
+    <img src="../assets/images/become_a_member.png"> </img>
+    <img src="../assets/images/current_campaigns.png"> </img>
 
   </div>
 
-  <!--Inclusion Section -->
-
-  <div class = "InclusionSection" style = "display:none">
-    Inclusion
-    <img src="../assets/images/magnifyCode"></img>
-    <p>Fix Code Yourself</p>
-  </div>
+<!-- End of Main Content -->
 </div>
 
+<!-- End of Container -->
 </div>
 
   <script>
-  let includeButton = document.getElementById("inclusionExclusion");
-  includeButton.addEventListener("click",showIncludeSection);
-
-  function showIncludeSection(){
-    console.log("triggered");
-    let benefitsList  = document.getElementsByClassName("benefitsSection");
-    for(let i =0; i< benefitsList.length; i++){
-      benefitsList[i].style.display ="none";
-    }
-
-    let inclusionList  = document.getElementsByClassName("InclusionSection");
-    for(let i =0; i< inclusionList.length; i++){
-      inclusionList[i].style.display ="block";
-    }
-
-  }
 
   </script>
 </body>
