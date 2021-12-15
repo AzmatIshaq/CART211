@@ -8,7 +8,7 @@
   <!-- Alegreya font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;800&display=swap" rel="stylesheet">
 
    <!-- Roboto font -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -40,15 +40,16 @@
   <!-- <div id="logo"></div> -->
 <!-- Main Content div -->
 <div class="mainContentCommunity">
-  <div style="background-color:black;"> <img src="../assets/images/join_movement.png"> </img> </div>
+  <!-- <div style="background-color:black;"> <img src="../assets/images/join_movement.png"> </img> </div> -->
 
-  <div style="background-color:black;">
 
-    <!-- Join the Movement Heading -->
-    <div> <img src="../assets/images/join_the_movement.png"> </img> </div>
+
+
 
 <!-- Header Current Campaign -->
-<div> <img src="../assets/images/current_campaigns.png"> </img> </div>
+<div> <img src="../assets/images/current_campaigns.png"> </img> </div
+  >
+
 
     <!-- Current Campaigns -->
     <div id="currentCampaigns">
@@ -58,16 +59,48 @@
         <img src="../assets/images/fight_to_repair_cc.png"> </img>
         <img src="../assets/images/high_priority_cc.png"> </img>
         <img src="../assets/images/Free_JS_cc.png"> </img>
-</br>
 
-    <img src="../assets/images/volunteer.png"> </img>
-    <img src="../assets/images/shop.png"> </img>
-    <img src="../assets/images/donate.png"> </img>
-    <img src="../assets/images/become_a_member.png"> </img>
-  </div>
 
 
   </div>
+
+
+
+<hr id="dividerJoin">
+  <!-- Join the Movement Heading -->
+  <div id="contentJoin">
+    <h2> JOIN THE MOVEMENT </h2>
+<div id="memberHeader" class="joinHeaders">
+  BECOME A MEMBER </div>
+
+  <div id="inputJoin">
+
+<p><span class="inputLabel">Full Name</span><input type="text" id="nameInput" name="fname"> </p>
+<p><span class="inputLabel">E-mail</span><input type="text" id="emailInput" name="fname"> </p>
+
+  <input type="button" value="Submit" id="submitButton">
+  </div>
+  <!-- <img src="../assets/images/become_a_member.png"> </img> -->
+        <!-- <img src="../assets/images/volunteer.png"> </img>
+        <img src="../assets/images/shop.png"> </img>
+        <img src="../assets/images/donate.png"> </img> -->
+
+        <div id="volunteerHeader"class="joinHeaders">
+          VOLUNTEER </div>
+          <div id="volunteerSection">
+
+            <p>
+              <!-- <img  class = "volunteerImg" src="../assets/images/freedom_ladder_cc.png"> </img> -->
+              fskfjsf
+            </p>
+
+             <p>fskfjsf</p>
+             <p>fskfjsf</p>
+           </div>
+<!-- End of content Join -->
+  </div>
+
+
 
 <!-- End of Main Content -->
 </div>
@@ -92,7 +125,15 @@
 </div>
 
   <script>
+document.getElementById("submitButton").addEventListener("click",function(){
+event.preventDefault();
+alert("thank you");
+document.getElementById("nameInput").value=""
+document.getElementById("emailInput").value=""
 
+
+
+})
   </script>
 </body>
 

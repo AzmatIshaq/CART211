@@ -90,7 +90,7 @@ body {
 #sideNav {
   grid-row: 1 / span 3;
   background-color: #25211e;
-  height: 90%;
+  height: 80vh;
   border-radius:5px;
   padding-right:5px;
 }
@@ -116,7 +116,9 @@ body {
   background-color: black;
   /* border-color: blue; */
   /* border-style: dotted; */
-  height: 90%;
+  width: 50%
+  /* height: 90%; */
+  margin-bottom: 10px;
   box-sizing: border-box;
   /* width: 95%;
   display: grid;
@@ -457,20 +459,20 @@ border-radius: 5px;
     /* border-color: green; */
     /* border-style: dotted; */
     width: 100%;
-    display: grid;
-    grid-template-columns: 10% 90%;
+    /* display: grid;
+    grid-template-columns: 10% 90%; */
     color: white;
     box-sizing: border-box;
   }
 
-  .mainContentCommunity > div {
+  /* .mainContentCommunity > div {
     margin-left:20%;
     background-color: red;
     padding-left:5px;
     margin-top: 10px;
-    /* border-color: white;
-    border-style: dotted; */
-  }
+    border-color: white;
+    border-style: dotted;
+  } */
 
   .mainContentCommunity > div img{
     width: 250px;
@@ -479,14 +481,115 @@ border-radius: 5px;
   /* Current Campaigns */
 
 #currentCampaigns {
-  grid-row: 1 / span 3;
+
   background-color: #25211e;
   height: 90%;
   border-radius:5px;
   padding-right:5px;
+  display: flex;
+  justify-content: center;
+}
+
+/*  Content Join */
+
+#contentJoin {
+  /* background-color:blue; */
+  background-image: url("../assets/images/join_movement.png");
+
+  background-repeat:no-repeat;
+  background-size: 20%;
+}
+
+#contentJoin h2 {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 800;
+  font-size: 100px;
+  margin-left: 15%;
+}
+
+/* Join headers */
+
+.joinHeaders {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  background-color: orange;
+  width: max-content;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right:20px;
+  margin-left: 17%;
+
+}
+
+#memberHeader {
+  margin-top: -50px;
+}
+
+#volunteerHeader {
+  margin-top: 30px;
+}
+
+/* Volunteer Section */
+
+#volunteerSection {
+  display:flex;
+  background-color:green;
+  margin-left:17%;
+  width: 83%;
+  justify-content: center;
+
+}
+
+#volunteerSection p {
+  width: 20%;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  text-align:center;
+
+
+}
+
+.volunteerImg{
+  display:block;
+  width:100%;
+
+}
+
+/*  Input Join */
+
+#inputJoin {
+  margin-left: 28%;
+  margin-top: 30px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+
+}
+
+/* Input class for all inputs. Use different class for multiple inputs  */
+
+input {
+  display:inline-block;
+  background-color:dodgerblue;
+  border-color: pink;
+  color: white;
+
+}
+
+.inputLabel{
+  width:10%;
+  display: inline-block;
+  background-color:purple;
 }
 
 
+#dividerJoin {
+  width: 50%;
+  border-top: 1px solid red;
+  border-bottom: none;
+}
 
   /* Footer */
 
@@ -601,7 +704,25 @@ border-radius: 5px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-origin: border-box;
-  background-position: center;
+  background-position: 20% 0%;
   background-repeat: no-repeat;
   background-size: 40%;
+}
+
+  /* Parallax over footer  */
+
+.parallax2 {
+/* The image used */
+background-image: url("https://i.ibb.co/D1R1Z8h/gnu-logo.png");
+background-color:#3a3229;
+
+/* Set a specific height */
+min-height: 200px;
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-origin: border-box;
+background-position: center;
+background-repeat: no-repeat;
+background-size: 40%;
 }
