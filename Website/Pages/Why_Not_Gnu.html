@@ -39,9 +39,11 @@
   <!-- <div id="logo"></div> -->
 <!-- Main Content div -->
 <div class="mainContentNotGNU">
+
+  <!-- Side Nav -->
   <div style="height:250px;margin-bottom:100px" id="sideNav">
-    <div id="benefits"> <img src="../assets/images/quality.png"> </img> </div>
-    <div id="inclusionExclusion"> <img src="../assets/images/inconvenient.png"> </img> </div>
+    <div id="benefits" class="card"> <img src="../assets/images/quality.png"> </img> </div>
+    <div id="inclusionExclusion" class="card"> <img src="../assets/images/inconvenient.png"> </img> </div>
   </div>
 
 
@@ -52,12 +54,12 @@
 
   <div class = "benefitsSection" id="cellTwo">
     <img src="../assets/images/adobe_editing_software.png"></img>
-    <p>Editing software</p>
+    <p> Photo & Video Editing</p>
   </div>
 
   <div class = "benefitsSection" id="cellThree">
     <img src="../assets/images/cad_design_software.png"></img>
-        <p>Editing software</p>
+        <p>Design and Modelling</p>
   </div>
 
   <div style="grid-row: 2; background-color:black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
@@ -96,22 +98,43 @@
 </div> <!-- End of Container -->
 
   <script>
-  let includeButton = document.getElementById("inclusionExclusion");
-  includeButton.addEventListener("click",showIncludeSection);
+  // Code to have click reveal effect between div sections
+    // Reveal inclusion vs exclusion section
+    let includeButton = document.getElementById("inclusionExclusion");
+    includeButton.addEventListener("click",showIncludeSection);
 
-  function showIncludeSection(){
-    console.log("triggered");
-    let benefitsList  = document.getElementsByClassName("benefitsSection");
-    for(let i =0; i< benefitsList.length; i++){
-      benefitsList[i].style.display ="none";
+    function showIncludeSection(){
+      console.log("triggered");
+      let benefitsList  = document.getElementsByClassName("benefitsSection");
+      for(let i =0; i< benefitsList.length; i++){
+        benefitsList[i].style.display ="none";
+      }
+
+      let inclusionList  = document.getElementsByClassName("inclusionSection");
+      for(let i =0; i< inclusionList.length; i++){
+        inclusionList[i].style.display ="block";
+      }
     }
 
-    let inclusionList  = document.getElementsByClassName("InclusionSection");
-    for(let i =0; i< inclusionList.length; i++){
-      inclusionList[i].style.display ="block";
+    // Reveal Benefits section
+
+    let benefitsButton = document.getElementById("benefits");
+    benefitsButton.addEventListener("click",showBenefitsSection);
+
+
+    function showBenefitsSection(){
+      console.log("triggered");
+      let benefitsList  = document.getElementsByClassName("benefitsSection");
+      for(let i =0; i< benefitsList.length; i++){
+        benefitsList[i].style.display ="block";
+      }
+
+      let inclusionList  = document.getElementsByClassName("inclusionSection");
+      for(let i =0; i< inclusionList.length; i++){
+        inclusionList[i].style.display ="none";
+      }
     }
 
-  }
 
   </script>
 </body>
