@@ -426,13 +426,15 @@ border-radius: 5px;
 
 .mainContentNotGNU {
   background-color: black;
-  /* border-color: blue;
-  border-style: dotted; */
-  width: 100%;
+  /* border-color: blue; */
+  /* border-style: dotted; */
+  width: 95%;
   display: grid;
   grid-template-columns: 20% 26.6% 26.6% 26.6%;
+  gap: 1%;
   color: white;
-  box-sizing: border-box;
+  margin-top:1%;
+  margin-bottom: 200px
 }
 
 .mainContentNotGNU > div {
@@ -448,6 +450,9 @@ border-radius: 5px;
   width: 200px;
 }
 
+.whyNotCells {
+
+}
 
 
 /* STYLING for Community Collaboration Page*/
@@ -726,3 +731,20 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: 40%;
 }
+
+
+/* Fade effect for Campaigns in Community and Collaboration */
+
+.campaignsEffect {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.campaignsEffect:hover {opacity: 1}

@@ -36,45 +36,47 @@
   </div>
 
     <!-- Logo Div-->
-  <!-- <div id="logo"></div> -->
+  <div id="logo"><img src="../assets/images/confused_gnu_logo.png"></img> </div>
 <!-- Main Content div -->
 <div class="mainContentNotGNU">
 
   <!-- Side Nav -->
-  <div style="height:250px;margin-bottom:100px" id="sideNav">
-    <div id="benefits" class="card"> <img src="../assets/images/quality.png"> </img> </div>
-    <div id="inclusionExclusion" class="card"> <img src="../assets/images/inconvenient.png"> </img> </div>
-  </div>
+  <div id="sideNav">
+    <div id="quality" class="card"> <img src="../assets/images/quality.png"> </img> </div>
+    <div id="inconvenient" class="card"> <img src="../assets/images/inconvenient.png"> </img> </div>
+</div>
 
+  <!-- Quality and Upkeep section -->
 
-  <div class = "benefitsSection" id="cellOne">
+<div class = "qualitySection">
+  <div id="cellOne">
     <img src="../assets/images/valorant_video_game.png"></img>
     <p>Videogames</p>
-  </div>
+</div>
 
-  <div class = "benefitsSection" id="cellTwo">
+  <div id="cellTwo">
     <img src="../assets/images/adobe_editing_software.png"></img>
     <p> Photo & Video Editing</p>
-  </div>
+</div>
 
-  <div class = "benefitsSection" id="cellThree">
+  <div  id="cellThree">
     <img src="../assets/images/cad_design_software.png"></img>
         <p>Design and Modelling</p>
-  </div>
+</div>
 
-  <div style="grid-row: 2; background-color:black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        <div style="grid-row: 2; background-color:black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
 
-    <div style="grid-row: 2; background-color:black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+          <div style="grid-row: 2; background-color:black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
 
-      <div style="grid-row: 2; background-color:black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div style="grid-row: 2; background-color:black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+    </div>
+  <!--Inconvenient & Impractical Section -->
 
-  <!--Inclusion Section -->
-
-  <!-- <div class = "InclusionSection" style = "display:none">
+  <div class = "inconvenientSection" style = "display:none">
     Inclusion
-    <img src="../assets/images/magnifyCode"></img>
+    <img src="../assets/images/bar_stats.png"></img>
     <p>Fix Code Yourself</p>
-  </div> -->
+  </div>
 
 </div>   <!-- End of Maint Content -->
 
@@ -93,45 +95,46 @@
 
 </tr>
 </table>
-
+</div>
 
 </div> <!-- End of Container -->
 
   <script>
   // Code to have click reveal effect between div sections
-    // Reveal inclusion vs exclusion section
-    let includeButton = document.getElementById("inclusionExclusion");
-    includeButton.addEventListener("click",showIncludeSection);
+    // Reveal inconvenient section
+    let inconvenientButton = document.getElementById("inconvenient");
+    inconvenientButton.addEventListener("click",showInconvenientSection);
 
-    function showIncludeSection(){
+    function showInconvenientSection(){
       console.log("triggered");
-      let benefitsList  = document.getElementsByClassName("benefitsSection");
-      for(let i =0; i< benefitsList.length; i++){
-        benefitsList[i].style.display ="none";
+      // Hide quality section
+      let qualityList  = document.getElementsByClassName("qualitySection");
+      for(let i =0; i< qualityList.length; i++){
+        qualityList[i].style.display ="none";
       }
 
-      let inclusionList  = document.getElementsByClassName("inclusionSection");
-      for(let i =0; i< inclusionList.length; i++){
-        inclusionList[i].style.display ="block";
+      let inconvenientList  = document.getElementsByClassName("inconvenientSection");
+      for(let i =0; i< inconvenientList.length; i++){
+        inconvenientList[i].style.display ="block";
       }
     }
 
-    // Reveal Benefits section
+    // Reveal Quality section
 
-    let benefitsButton = document.getElementById("benefits");
-    benefitsButton.addEventListener("click",showBenefitsSection);
+    let qualityButton = document.getElementById("quality");
+    qualityButton.addEventListener("click",showQualitySection);
 
 
-    function showBenefitsSection(){
+    function showQualitySection(){
       console.log("triggered");
-      let benefitsList  = document.getElementsByClassName("benefitsSection");
-      for(let i =0; i< benefitsList.length; i++){
-        benefitsList[i].style.display ="block";
+      let qualityList  = document.getElementsByClassName("qualitySection");
+      for(let i =0; i< qualityList.length; i++){
+        qualityList[i].style.display ="block";
       }
 
-      let inclusionList  = document.getElementsByClassName("inclusionSection");
-      for(let i =0; i< inclusionList.length; i++){
-        inclusionList[i].style.display ="none";
+      let inconvenientList  = document.getElementsByClassName("inconvenientSection");
+      for(let i =0; i< inconvenientList.length; i++){
+        inconvenientList[i].style.display ="none";
       }
     }
 
