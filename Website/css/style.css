@@ -350,10 +350,11 @@ border-radius: 5px;
 
 
   .mainContentSoftware {
+    margin-left: 9%;
     background-color: black;
     /* border-color: blue; */
     /* border-style: dotted; */
-    width: 100%;
+    width: 83%;
     display: grid;
     grid-template-columns: 40% 60%;
     color: white;
@@ -490,6 +491,7 @@ padding-bottom: 50px;
   font-family:'Alegreya Sans', sans-serif;
   font-weight:100;
   font-size:120%;
+  margin-top: 55px;
 
 }
 
