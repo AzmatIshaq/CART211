@@ -82,9 +82,11 @@ body {
   width:100%;
 }
 
+
+
   /* Inclusion vs Exclusion images */
 
-  .maintContentInclusion {
+  .maintContentInclusionImg {
     width:10%;
   }
 
@@ -478,12 +480,16 @@ border-radius: 5px;
 #notGnuText {
   font-family:'Alegreya Sans', sans-serif;
   font-weight:100;
+  font-size:120%;
 
 }
 
 .notGnuFlipText {
   font-family:'Alegreya Sans', sans-serif;
   font-weight:100;
+  font-size: 120%;
+  color:black;
+
 }
 
 
@@ -572,11 +578,13 @@ margin-top:40px;
   padding-left: 20px;
   padding-right:20px;
   margin-left: 17%;
+  border-radius:5px;
 
 }
 
 #memberHeader {
-  margin-top: -50px;
+  margin-top: 200px;
+
 }
 
 #volunteerHeader {
@@ -701,14 +709,16 @@ input {
 }
 
 .flip-box-front {
-  background-color: #bbb;
+  background-color: #3a3229;
   color: black;
+  border-radius: 5px;
 }
 
 .flip-box-back {
-  background-color: dodgerblue;
+  background-color: #ab9f57;
   color: white;
   transform: rotateX(180deg);
+  border-radius: 5px;
 }
 
 
@@ -766,7 +776,7 @@ input {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   opacity: 0.8;
-
+  background: #3a3229;
   border-radius: 10px;
   /* border-style: dotted; */
   /* border-color:purple; */
@@ -775,7 +785,7 @@ input {
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   opacity: 1;
-  background: #3a3229;
+  background: black;
     /* Zoom effect */
   -ms-transform: scale(1.05); /* IE 9 */
   -webkit-transform: scale(1.05); /* Safari 3-8 */
