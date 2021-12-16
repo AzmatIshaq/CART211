@@ -434,7 +434,7 @@ border-radius: 5px;
   gap: 1%;
   color: white;
   margin-top:1%;
-  margin-bottom: 200px
+  margin-bottom: 200px;
 }
 
 .mainContentNotGNU > div {
@@ -450,9 +450,41 @@ border-radius: 5px;
   width: 200px;
 }
 
-.whyNotCells {
+  /* Logo styling */
+
+#logoConfused {
+    
+}
+
+
+  /* Quality Section Styling */
+
+.qualitySection {
 
 }
+
+.qualitySection > div {
+
+}
+
+.qualitySection > div img {
+  width: 10%;
+}
+
+
+
+/* Quality Click Section*/
+#quality {
+margin-top:40px;
+}
+
+/* Inconvenient Click Section*/
+#inconvenient {
+  margin-top:40px;
+
+
+}
+
 
 
 /* STYLING for Community Collaboration Page*/
