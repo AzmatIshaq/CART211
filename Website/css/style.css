@@ -434,32 +434,39 @@ border-radius: 5px;
   background-color: black;
   /* border-color: blue; */
   /* border-style: dotted; */
-  width: 95%;
+  width: 100%;
   display: grid;
-  grid-template-columns: 20% 26.6% 26.6% 26.6%;
+  grid-template-columns: 20% 25% 25% 25%;
   gap: 1%;
   color: white;
   margin-top:1%;
   margin-bottom: 200px;
 }
 
-.mainContentNotGNU > div {
+/* .mainContentNotGNU > div {
   margin-left:20%;
   background-color: black;
   padding-left:5px;
   margin-top: 10px;
-  /* border-color: white;
-  border-style: dotted; */
-}
+  border-color: white;
+  border-style: dotted;
+} */
 
 .mainContentNotGNU > div img{
-  width: 200px;
+  width:100%;
 }
 
   /* Logo styling */
 
 #logoConfused {
+grid-column: 2 / span 3;
+background:black;
+display:flex;
+}
 
+#logoConfused img {
+width: 50%;
+padding-bottom: 50px;
 }
 
 
@@ -533,8 +540,12 @@ margin-top:40px;
   } */
 
   .mainContentCommunity > div img{
-    width: 250px;
+    width: 100%;
+
   }
+
+
+
 
   /* Current Campaigns */
 
@@ -547,6 +558,14 @@ margin-top:40px;
   padding-right:5px;
   display: flex;
   justify-content: center;
+  width: 75%;
+  margin-left:20%;
+
+}
+
+#currentCampaigns img {
+  width: 20%;
+
 }
 
 /*  Content Join */
@@ -583,7 +602,7 @@ margin-top:40px;
 }
 
 #memberHeader {
-  margin-top: 200px;
+  margin-top: 100px;
 
 }
 
@@ -595,10 +614,10 @@ margin-top:40px;
 
 #volunteerSection {
   display:flex;
-  background-color:green;
+  background-color:black;
   margin-left:17%;
   width: 83%;
-  justify-content: center;
+  /* justify-content: center; */
 
 }
 
@@ -616,7 +635,7 @@ margin-top:40px;
   display:block;
   width:100%;
 
-}
+  }
 
 /*  Input Join */
 
@@ -634,7 +653,7 @@ margin-top:40px;
 input {
   display:inline-block;
   background-color:grey;
-  border-color: pink;
+  border-color: grey;
   color: white;
 
 }
@@ -668,6 +687,7 @@ input {
 .footer a {
   color:white;
   /* grid-template-columns: : 50% 50% */
+  text-decoration: none;
 
 }
 
@@ -683,7 +703,7 @@ input {
   background-color: transparent;
   width: 300px;
   height: 200px;
-  border: 1px solid #f1f1f1;
+
   perspective: 1000px;
 }
 
@@ -709,7 +729,7 @@ input {
 }
 
 .flip-box-front {
-  background-color: #3a3229;
+  background-color: black;
   color: black;
   border-radius: 5px;
 }
@@ -763,7 +783,7 @@ input {
 
   .flip-card-back {
     background-color:#ab9f57;
-    color: white;
+    color: red;
     transform: rotateY(180deg);
     border-radius: 5px;
 
@@ -791,6 +811,8 @@ input {
   -webkit-transform: scale(1.05); /* Safari 3-8 */
   transform: scale(1.05);
 }
+
+
 
 /* Add effect when active */
 /* .card:hover.active {
@@ -839,7 +861,6 @@ background-size: 40%;
 
 .campaignsEffect {
   background-color: transparent;
-  border: none;
   color: white;
   padding: 16px 32px;
   text-align: center;
@@ -847,6 +868,7 @@ background-size: 40%;
   margin: 4px 2px;
   opacity: 0.6;
   transition: 0.3s;
+
 }
 
 .campaignsEffect:hover {opacity: 1}

@@ -35,18 +35,32 @@
     <div id="navLogo"><img src="../assets/images/gnu_nav.png"></img></div>
   </div>
 
-  <!-- Logo Div-->
-<div id="logoConfused"><img style="width: 150px; margin-left:500px" src="../assets/images/confused_gnu_logo.png"></img> </div>
-<!-- Main Content div -->
 <div class="mainContentNotGNU">
+
+
+<!-- Main Content div -->
+
 
 
 
   <!-- Side Nav -->
   <div id="sideNav">
-    <div id="quality" class="card"> <img src="../assets/images/quality_side_active.png"> </img> </div>
+    <div id="quality" class="card"> <img id="quality_Image" src="../assets/images/quality_side_active.png"> </img> </div>
 
-    <div id="inconvenient" class="card"> <img src="../assets/images/inconvenient_side_inactive.png"> </img> </div>
+    <div id="inconvenient" class="card"> <img id="inconvenient_Image" src="../assets/images/inconvenient_side_inactive.png"> </img> </div>
+
+</div>
+  <!-- Logo Div-->
+
+<div id="logoConfused">
+
+  <img  src="../assets/images/confused_gnu_logo.png"></img>
+  <!-- Text Why Not GNU? -->
+
+   <p id="notGnuText">Although the GNU philosophy has noble objectives. It is clear that many commercial software companies produce highly impressive programs which outcompete free software.
+
+         Furthermore, the upkeep and updates for the paid software have a consistency that free software struggles to match.  </p>
+
 
 </div>
 
@@ -67,7 +81,7 @@
     <div class="flip-box">
       <div class="flip-box-inner">
         <div class="flip-box-front">
-           <img style="box-sizing:border-box; width:300px;" src="../assets/images/valorant_video_game.png"></img>
+           <img style="box-sizing:border-box; width:100%;" src="../assets/images/valorant_video_game.png"></img>
         </div>
         <div class="flip-box-back">
           <p class="notGnuFlipText">The video game industry has shown undeniable progress in the development of computer games.  </br></br>
@@ -85,7 +99,7 @@
       <div class="flip-box">
         <div class="flip-box-inner">
           <div class="flip-box-front">
-             <img style="width:300px;" src="../assets/images/adobe_editing_software.png"></img>
+             <img style="width:100%;" src="../assets/images/adobe_editing_software.png"></img>
           </div>
           <div class="flip-box-back">
             <h2>Design</h2>
@@ -108,7 +122,7 @@
     <div class="flip-box">
       <div class="flip-box-inner">
         <div class="flip-box-front">
-  <img style="width:300px;" src="../assets/images/cad_design_software.png"></img>
+  <img style="width:100%;" src="../assets/images/cad_design_software.png"></img>
         </div>
         <div class="flip-box-back">
           <h2>Design</h2>
@@ -119,11 +133,7 @@
         <p>Design and Modelling</p>
 </div>
 
-    <!-- Text Why Not GNU? -->
 
-        <div style="  grid-row: 1; grid-column: span 3; background-color:black;"> <p id="notGnuText">Although the GNU philosophy has noble objectives. It is clear that many commercial software companies produce highly impressive programs which outcompete free software.
-
-           Furthermore, the upkeep and updates for the paid software have a consistency that free software struggles to match.  </p>  </div>
 
 
 
@@ -173,6 +183,8 @@
 
     function showInconvenientSection(){
       console.log("triggered");
+    document.getElementById("quality_Image"). src="../assets/images/quality_side_inactive.png"
+    document.getElementById("inconvenient_Image"). src="../assets/images/inconvenient_side_active.png"
       // Hide quality section
       let qualityList  = document.getElementsByClassName("qualitySection");
       for(let i =0; i< qualityList.length; i++){
@@ -193,6 +205,8 @@
 
     function showQualitySection(){
       console.log("triggered");
+        document.getElementById("quality_Image"). src="../assets/images/quality_side_active.png"
+        document.getElementById("inconvenient_Image"). src="../assets/images/inconvenient_side_inactive.png"
       let qualityList  = document.getElementsByClassName("qualitySection");
       for(let i =0; i< qualityList.length; i++){
         qualityList[i].style.display ="block";

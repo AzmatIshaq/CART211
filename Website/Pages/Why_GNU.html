@@ -46,8 +46,8 @@
     <!-- Side Nav -->
   <div id="sideNav">
     <!-- Side Nav Styling, position, and effects -->
-    <div  id="benefits"  class="card"> <img src="../assets/images/benefits_side_active.png"> </img> </div>
-    <div  id="inclusionExclusion"  class="card"> <img src="../assets/images/inclusion_side_inactive.png"> </img> </div>
+    <div  id="benefits"  class="card"> <img id="benefitsImage" src="../assets/images/benefits_side_active.png"> </img> </div>
+    <div  id="inclusionExclusion"  class="card"> <img id="inclusionImage" src="../assets/images/inclusion_side_inactive.png"> </img> </div>
   </div>   <!-- End of sideNav -->
 
     <!-- Fix Code - Cell One -->
@@ -133,6 +133,8 @@
 
   function showIncludeSection(){
     console.log("triggered");
+    document.getElementById("benefitsImage"). src="../assets/images/benefits_side_inactive.png"
+    document.getElementById("inclusionImage"). src="../assets/images/inclusion_side_active.png"
     let benefitsList  = document.getElementsByClassName("benefitsSection");
     for(let i =0; i< benefitsList.length; i++){
       benefitsList[i].style.display ="none";
@@ -152,6 +154,9 @@
 
   function showBenefitsSection(){
     console.log("triggered");
+    document.getElementById("benefitsImage"). src="../assets/images/benefits_side_active.png"
+    document.getElementById("inclusionImage"). src="../assets/images/inclusion_side_inactive.png"
+
     let benefitsList  = document.getElementsByClassName("benefitsSection");
     for(let i =0; i< benefitsList.length; i++){
       benefitsList[i].style.display ="block";
