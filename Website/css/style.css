@@ -119,17 +119,13 @@ body {
 
   /* home id */
 
-/* Not using currently */
 #home {
-  background-color: purple;
   width: 400%;
 }
 
   /* home stallman */
 
 #homeStallman {
-  /* border: dotted;
-  border-color: lime; */
   width: 30%;
   height: 50%;
 }
@@ -139,9 +135,9 @@ body {
   margin-left: -8px;
 }
 
-  /* Font home id */
+/* Font home id */
 
-/* Gnu home button in middle of Navbar */
+  /* Gnu home Navbar*/
 
 #homeGNU {
   font-family: 'Alegreya Sans', sans-serif;
@@ -162,15 +158,11 @@ body {
 
 /* Cell for text next to home Stallman illustration */
   #cellOneHomeText {
-  /* width-right:1%; */
   margin-left: -20px;
   margin-top:6px;
   width: 80%;
   background-color: black;
   border-radius: 5px;
-  /* border-style: dotted; */
-  /* border-color: violet; */
-  /* margin-left:0%; */
   font-family:'Alegreya Sans', sans-serif;
   font-weight:100;
   font-size: 85%;
@@ -181,22 +173,17 @@ body {
 
 #logo {
   background-color: transparent;
-  /* border-style: dotted; */
-  /* border-color: yellow; */
   width:20%;
   margin-left:40%;
   position:relative;
   z-index:4;
   margin-top: -10px;
   top: 10px;
-
-  /* position: relative; */
-  /* overflow: visible; */
 }
+
 #logo img{
   width:100%;
 }
-
 
 /* Navigation small logo */
 
@@ -205,6 +192,7 @@ body {
   width:4%;
   margin-left:20%;
 }
+
 #navLogo img{
   width:100%;
 }
@@ -218,8 +206,6 @@ body {
 width-right:80%;
 background-color: #3a3229;
 border-radius: 5px;
-
-/* margin-left:0%; */
 }
 
     /* Edit image inside cellOne */
@@ -227,7 +213,6 @@ border-radius: 5px;
 #cellOne img {
   float: left;
   width: 50%;
-
 }
 
     /* Edit text inside cellOne */
@@ -252,7 +237,6 @@ border-radius: 5px;
   #cellTwo img {
     float: left;
     width: 50%;
-
   }
 
     /* Edit text inside cellTwo */
@@ -261,8 +245,6 @@ border-radius: 5px;
     font-family:'Alegreya Sans', sans-serif;
     font-size: 130%;
     margin-right: 4%;
-    /* padding-left: 50%; */
-
   }
 
   /* Cell Three */
@@ -278,7 +260,6 @@ border-radius: 5px;
   #cellThree img {
     float: left;
     width: 50%;
-
   }
 
     /* Edit text inside cellThree */
@@ -287,8 +268,6 @@ border-radius: 5px;
     font-family:'Alegreya Sans', sans-serif;
     font-size: 130%;
     margin-right: 4%;
-    /* padding-left: 50%; */
-
   }
 
   /* Cell Four */
@@ -297,7 +276,6 @@ border-radius: 5px;
   width-right:80%;
   background-color: #3a3229;
   border-radius: 5px;
-
   }
 
     /* Edit image inside cellFour */
@@ -305,7 +283,6 @@ border-radius: 5px;
   #cellFour img {
     float: left;
     width: 50%;
-
   }
 
     /* Edit text inside cellFour */
@@ -314,11 +291,9 @@ border-radius: 5px;
     font-family:'Alegreya Sans', sans-serif;
     font-size: 130%;
     margin-right: 4%;
-    /* padding-left: 50%; */
-
   }
 
-  /* GNU SOFTWARE PAGE STYLING */
+/* GNU SOFTWARE PAGE STYLING */
 
 
   .mainContentSoftware {
@@ -338,8 +313,6 @@ border-radius: 5px;
     background-color: red;
     padding-left:5px;
     margin-top: 10px;
-    /* border-color: white;
-    border-style: dotted; */
   }
 
   .mainContentSoftware > div img{
@@ -350,20 +323,16 @@ border-radius: 5px;
   /* Cells for Software page */
 
   #softwareCellOne {
-    /* width:auto; */
     background-color: black;
   }
 
   #softwareCellTwo {
-    /* width:auto; */
     background-color: black;
-    /* width:500%;
-    margin: auto; */
     margin-top:35px;
   }
+
     /* Divider for Software Page */
   #softwareCellThree {
-    /* Making element span two columns */
     grid-column: 1 / span 2;
     margin: auto;
     background-color: black;
@@ -670,14 +639,16 @@ input {
 /* Shop */
 
 .shopImg {
-width: 50%;
+width: 100%;
 margin-left:20%;
+margin-top:40px;
+border-style: solid;
+border-radius: 5px;
+border-width: 1px;
+border-color: white;
 }
 
 
-.shopImg > img {
-
-}
 
 
 /* Footer */
@@ -687,10 +658,9 @@ margin-left:20%;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     height: 120px;
-    /* grid-template-columns: 100%; */
+    margin-top:20px;
     padding-top:40px;
     padidng-bottom: 40px;
-    /* display: grid; */
     font-family: 'Alegreya Sans', sans-serif;
     font-weight: 100;
     justify-content: center;
