@@ -298,8 +298,6 @@ border-radius: 5px;
   .mainContentSoftware {
     margin-left: 9%;
     background-color: black;
-    /* border-color: blue; */
-    /* border-style: dotted; */
     width: 83%;
     display: grid;
     grid-template-columns: 40% 60%;
