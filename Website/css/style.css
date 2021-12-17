@@ -160,14 +160,15 @@ body {
   /* home stallman */
 
 #homeStallman {
-  /* border: dotted; */
-  /* border-color: lime; */
+  /* border: dotted;
+  border-color: lime; */
   width: 30%;
   height: 50%;
 }
 
 #homeStallman img {
   width: 100%;
+  margin-left: -8px;
 }
 
   /* Font home id */
@@ -193,7 +194,9 @@ body {
 
 /* Cell for text next to home Stallman illustration */
   #cellOneHomeText {
-  width-right:80%;
+  /* width-right:1%; */
+  margin-left: -20px;
+  margin-top:6px;
   width: 80%;
   background-color: black;
   border-radius: 5px;
@@ -202,6 +205,7 @@ body {
   /* margin-left:0%; */
   font-family:'Alegreya Sans', sans-serif;
   font-weight:100;
+  font-size: 85%;
   padding:0;
   }
 
@@ -468,39 +472,39 @@ display:flex;
 }
 
 #logoConfused img {
-width: 50%;
-padding-bottom: 50px;
+width: 150px;
+height: 150px;
+
+
 }
 
 
   /* Quality Section Styling */
 
-.qualitySection {
 
-}
-
-.qualitySection > div {
-
-}
-
-.qualitySection > div img {
-
-}
-
+  /* Text for Not GNU */
 #notGnuText {
   font-family:'Alegreya Sans', sans-serif;
   font-weight:100;
-  font-size:120%;
+  font-size:110%;
   margin-top: 55px;
-
 }
+
+  /* Text behind flip card */
 
 .notGnuFlipText {
   font-family:'Alegreya Sans', sans-serif;
-  font-weight:bold;
+  font-weight:800;
   font-size: 120%;
   color:black;
+}
 
+  /* Text under flipping images */
+.notGnuImagesText {
+  font-family:'Alegreya Sans', sans-serif;
+  font-weight:bold;
+  font-size: 120%;
+  color:white;
 }
 
 
@@ -567,16 +571,29 @@ margin-top:40px;
 
 }
 
+  /* Images for current Campaigns */
 #currentCampaigns img {
   width: 80%;
 }
 
-/*  Content Join */
+/* Text for Campaigns Section */
+
+.campaignSubHeaders {
+  display:flex;
+  justify-content: space-evenly;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  margin-top: -50px;
+  margin-left: 200px;
+  text-align:center;
+}
+
+/*  Content for Join Section */
+
 
 #contentJoin {
-  /* background-color:blue; */
   background-image: url("../assets/images/join_movement.png");
-
   background-repeat:no-repeat;
   background-size: 20%;
 }
@@ -584,8 +601,16 @@ margin-top:40px;
 #contentJoin h2 {
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: 800;
-  font-size: 70px;
-  margin-left: 21%;
+  font-size: 63px;
+  margin-left: 30%;
+}
+
+  /* Dividing line */
+#dividerJoin {
+  width: 45%;
+  margin-left: 33%;
+  border-top: 1px solid white;
+  border-bottom: none;
 }
 
 /* Join headers */
@@ -593,7 +618,7 @@ margin-top:40px;
 .joinHeaders {
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: 800;
-  font-size: 25px;
+  font-size: 22px;
   background-color: #ab9f57;
   width: max-content;
   padding: 0px;
@@ -604,10 +629,14 @@ margin-top:40px;
 
 }
 
+/* Header for Member Section */
+
 #memberHeader {
   margin-top: 57px;
 
 }
+
+/* Header for Volunteer Section */
 
 #volunteerHeader {
   margin-top: 30px;
@@ -620,24 +649,26 @@ margin-top:40px;
   background-color:black;
   margin-left:17%;
   width: 83%;
-  /* justify-content: center; */
-
-}
-
-#volunteerSection p {
-  width: 20%;
-  font-family: 'Alegreya Sans', sans-serif;
-  font-weight: 800;
-  font-size: 20px;
-  text-align:center;
 
 
 }
 
+  /* Images for Volunteer Section */
 .volunteerImg{
   display:block;
   width:100%;
+  }
 
+  /* Text for Volunteer Section */
+
+  .volunteerSubHeaders {
+    display:flex;
+    /* justify-content: space-evenly; */
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    margin-top: -25px;
+    /* text-align:center; */
   }
 
 /*  Input Join */
@@ -668,18 +699,13 @@ input {
 }
 
 
-#dividerJoin {
-  width: 50%;
-  border-top: 1px solid white;
-  border-bottom: none;
-}
-
 /* Shop */
 
 .shopImg {
 width: 50%;
 margin-left:20%;
 }
+
 
 .shopImg > img {
 
@@ -692,22 +718,36 @@ margin-left:20%;
     background: #25211e;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    height: 200px;
-    display: flex;
+    height: 150px;
+    /* grid-template-columns: 100%; */
     padding-top:40px;
     padidng-bottom: 40px;
     /* display: grid; */
-
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 100;
+    justify-content: center;
   }
+
 
 .footer a {
   color:white;
-  /* grid-template-columns: : 50% 50% */
   text-decoration: none;
-
+  top: 70px;
+  position: relative;
+  padding-right:50px;
 }
 
+.footerContents1 {
+  display: flex;
+  justify-content: center;
+}
 
+.footerContents2 {
+  display: flex;
+  justify-content: center;
+  margin-top:20px;
+
+}
 
 
   /* Effects */
@@ -828,51 +868,6 @@ margin-left:20%;
   -webkit-transform: scale(1.05); /* Safari 3-8 */
   transform: scale(1.05);
 }
-
-
-
-/* Add effect when active */
-/* .card:hover.active {
-    background: #3a3229;
-} */
-
-
-  /* Parallax  under Navbar*/
-
-  .parallax {
-  /* The image used */
-
-  background-color:#3a3229;
-
-  /* Set a specific height */
-  min-height: 300px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-origin: border-box;
-  background-position: 20% 0%;
-  background-repeat: no-repeat;
-  background-size: 40%;
-}
-
-  /* Parallax over footer  */
-
-.parallax2 {
-/* The image used */
-
-background-color:#3a3229;
-
-/* Set a specific height */
-min-height: 200px;
-
-/* Create the parallax scrolling effect */
-background-attachment: fixed;
-background-origin: border-box;
-background-position: center;
-background-repeat: no-repeat;
-background-size: 40%;
-}
-
 
 /* Fade effect for Campaigns in Community and Collaboration */
 
